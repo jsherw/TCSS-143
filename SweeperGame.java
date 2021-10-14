@@ -3,6 +3,15 @@
  * @version 10 October 2021
  * Instructor: Professor Sakpal
  * TCSS 143 (Fall 2021)
+ 
+ Supplemental class for Simple Sweeper game. 
+ Simple Sweeper driver class provided by Professor Sakpal.
+ Students were asked to create a class capable of creating a gameboard of varying size,
+ allow the user to check spaces for "treasure" and to report a manhattan distance from
+ the checked space to the location of the treasure.
+ 
+ This exercise encouraged us to practice encapsulation, working with 2D arrays,
+ instantiating objects, and creating overriding toString methods.
  */
 
 import java.util.*;
