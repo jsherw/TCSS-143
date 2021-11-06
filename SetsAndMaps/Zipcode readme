@@ -1,0 +1,13 @@
+Both zipcode set and Zipcode map utilize a .csv file to provide data.
+The csv file contained 11 columns and 500 rows with different types of data.
+
+ZipcodeSet was meant to familiarize us with working with Sets in java. 
+We created a program to read the file, store it as a Set, and perform operations on the data provided.
+We created methods to find zipcodes within the data, and parse even and odd values from those zipcodes.
+We also created a method to display maximum and minimum values from those sets.
+
+ZipcodeMap asked us to use Maps to create searchable databases of the information in the .csv file.
+Again, we read the file and stored the information in a Map. We then created methods that allowed
+users to find information by searching for phone numbers contained in the list. We also created a 
+method that searched the set for states with multiple residents and displayed the states along with all
+person's associated with those states.
