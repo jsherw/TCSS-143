@@ -1,0 +1,47 @@
+import java.util.Objects;
+
+public class Ticket {
+    private double price;
+    private int daysEarly;
+    private String promotionCode = "";
+
+    private static int ticketID = 0;
+
+    public Ticket (double price, int daysEarly) throws IllegalArgumentException{
+        this.price = price;
+        this.daysEarly = daysEarly;
+
+        ticketID++;
+    }
+    public int getDaysEarly(){
+        return daysEarly;
+    }
+    public void setPrice(int x){
+        this.price += x;
+    }
+    public double getPrice(){
+        return price;
+    }
+    public String getPromotionCode(){
+        return promotionCode;
+    }
+    public void setPromotionCode(String code) throws IllegalArgumentException{
+        promotionCode += code + " ";
+    }
+    // @Override default toString method
+    public String toString(){
+        return ""+ getPrice() + " " + getDaysEarly() + " " + getPromotionCode();
+    }
+    public static int getTicketCount(){
+        return ticketID;
+    }
+
+    //@Override default equals method
+    public boolean equals(Ticket o){
+        if (o.getPrice()!= this.getPrice()){
+            return false;
+        }  else{
+            return true;
+        }
+    }
+}
