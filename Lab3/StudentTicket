@@ -1,0 +1,22 @@
+public class StudentTicket extends Ticket{
+    public boolean honorStudent;
+
+    public StudentTicket(double price, boolean honors){
+        super((price / 2), 14);
+        super.setPromotionCode("(student)");
+        honorStudent = honors;
+
+        if (isHonorStudent()){
+            super.setPrice(-5);
+        }
+    }
+    public double getPrice(){
+        return super.getPrice();
+    }
+    public int getDaysEarly(){
+        return super.getDaysEarly();
+    }
+    public boolean isHonorStudent(){
+        return honorStudent;
+    }
+}
